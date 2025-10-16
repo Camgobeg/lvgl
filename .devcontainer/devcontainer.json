@@ -2,6 +2,9 @@
   "name": "Ubuntu 24.04 Codespace",
   "build": {
     "dockerfile": "Dockerfile"
+        "args": {
+      "USER_UID": "1001",
+      "USER_GID": "1001"
   },
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash"
@@ -12,3 +15,5 @@
   },
   "postCreateCommand": "sudo apt-get update && sudo apt-get install -y neofetch"
 }
+
+
